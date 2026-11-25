@@ -133,7 +133,19 @@ A threshold of 0.5 is recommended for this activity because it provides good ove
 
 The model predicts that the customer is unlikely to purchase the product.
 
-## 9. Conclusion
+## 9. Decision Log
+
+| Decision | Reason |
+|---|---|
+| Selected Social Network Ads dataset | Suitable for binary classification. |
+| Selected Age and EstimatedSalary | Relevant numerical input features. |
+| Excluded User ID and Gender | To avoid irrelevant identifiers and keep the model simple. |
+| Used StandardScaler | To bring numerical features to a comparable scale. |
+| Used stratified 80:20 splitting | To maintain class proportions. |
+| Selected Logistic Regression | Suitable for binary classification and probability prediction. |
+| Selected threshold 0.5 | Achieved good accuracy and precision among the tested thresholds. |
+
+## 10. Conclusion
 
 The Logistic Regression model achieved a testing accuracy of 83.75% and a ROC-AUC score of 0.9053. It performed better than the majority-class baseline and demonstrated its ability to classify customers based on age and estimated salary.
 
@@ -141,7 +153,7 @@ The model can support marketing decisions by identifying potential customers and
 
 However, purchasing behaviour may also depend on other factors, such as customer interests, product price and advertising quality. The prediction is a probability-based estimate and not a guaranteed outcome.
 
-## 10. How to Run the Project
+## 13. How to Run the Project
 
 1. Download or clone this repository.
 2. Install the required Python libraries.
@@ -149,10 +161,10 @@ However, purchasing behaviour may also depend on other factors, such as customer
 4. Open `Social_Network_Ads_Logistic_Regression.ipynb` in Jupyter Notebook or Google Colab.
 5. Run all cells sequentially.
 
-## 11. References
+## 12. References
 
 - [Kaggle – Social Network Ads Dataset](https://www.kaggle.com/datasets/akram24/social-network-ads)
 
-## 12. Faculty GitHub Reference
+## 14. Faculty GitHub Reference
 
 [https://github.com/complexiota](https://github.com/complexiota)
